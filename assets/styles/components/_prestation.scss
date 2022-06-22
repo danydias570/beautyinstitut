@@ -1,0 +1,44 @@
+.prestation {
+    width: 100%;
+    padding-top: 10%;
+
+    & h3 {
+        font-size:  clamp(30px, 7vw, 40px);
+        font-weight: inherit;
+    }
+
+    & .tab {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 40px 0 100px;
+
+        & .row {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid $light-brown;
+            padding: 20px 10px;
+            font-size: 20px;
+
+            &:last-child {
+                border-bottom: 1px solid $light-brown;
+            }
+
+            & .name {
+                @include centerDiv();
+                font-weight: 900;
+            }
+
+            & .desc {
+                @include centerDiv();
+                font-size: 14px;
+                width: 40%
+            }
+
+            & .price {
+                @include centerDiv();
+                font-weight: 900;
+            }
+        }
+    }
+}
